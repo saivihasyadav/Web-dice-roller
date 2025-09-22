@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.instructions {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.dice-container {
+  display: flex;
+  flex-direction: column; /* stack vertically to avoid overlap */
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dice label {
+  font-weight: bold;
+  margin-right: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.dice input {
+  flex: 1;
+  text-align: right;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+}

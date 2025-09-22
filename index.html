@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dice Roller</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body onload="rollDice()">
+    <div class="container">
+      <h1>🎲 Web Dice Roller 🎲</h1>
+
+      <p class="instructions">
+        This application simulates rolling dice. When you load the page, the
+        dice roll automatically. You can press the **Roll Dice** button or
+        simply hit the **Enter** key to roll again.
+      </p>
+
+      <div class="dice-container">
+        <div class="dice">
+          <label for="die1">Die 1:</label>
+          <input id="die1" type="text" readonly />
+        </div>
+        <div class="dice">
+          <label for="die2">Die 2:</label>
+          <input id="die2" type="text" readonly />
+        </div>
+        <div class="dice">
+          <label for="die3">Die 3:</label>
+          <input id="die3" type="text" readonly />
+        </div>
+        <div class="dice">
+          <label for="die4">Die 4:</label>
+          <input id="die4" type="text" readonly />
+        </div>
+        <div class="dice">
+          <label for="die5">Die 5:</label>
+          <input id="die5" type="text" readonly />
+        </div>
+      </div>
+
+      <button id="rollBtn" autofocus onclick="rollDice()">Roll Dice</button>
+    </div>
+  </body>
+</html>
